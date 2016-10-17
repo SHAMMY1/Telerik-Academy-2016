@@ -1,0 +1,23 @@
+{
+  "name": "JQuery",
+  "homepage": "",
+  "authors": [
+    "SHAMMY1 <shammy.bg1@gmail.com>"
+  ],
+  "description": "",
+  "main": "app.js",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "~3.1.0"
+  }
+}

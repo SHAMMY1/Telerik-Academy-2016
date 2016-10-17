@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">HELLO</div>
+    
+    <script id="template" type="text/x-handlebars-template">
+    <h2>{{city.name}}</h2>
+    <div style='color: white'>
+        {{#each list}}
+        <div style='background-image:{{#ifModule dt_txt }} url(https://pixabay.com/static/uploads/photo/2014/04/08/19/38/sky-319546_960_720.png){{else}} url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6UXMZDXWv5QS1qsjwmtlaxQBcihvR6egWFez39OJvWV4TUfTe){{/ifModule}}'>
+        <p>{{#weather}}{{description}}{{/weather}}</p>
+        <p>{{dt_txt}}</p>
+        <img src="https://openweathermap.org/img/w/{{#weather}}{{icon}}{{/weather}}.png" alt="{{weather.main}}">
+        <p>temperature {{main.temp}} &deg;C</p>
+        </div>
+        {{/each}}
+        
+        </div>
+    </script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+        <script src="bower_components/handlebars/handlebars.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
