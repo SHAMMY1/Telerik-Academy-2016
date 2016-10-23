@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schema 
+  targetNamespace="urn:students"
+    elementFormDefault="qualified"
+           xmlns:students ="urn:students"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+>
+    <element name="students">
+    <complexType>
+      <sequence maxOccurs="unbounded">
+        <element name="student">
+          <complexType>
+            <sequence>
+              <element name="name" type="string"></element>
+              <element name="sex">
+                <simpleType>
+                  <restriction base="string">
+                    <enumeration value="male"></enumeration>
+                    <enumeration value="female"></enumeration>
+                  </restriction>
+                </simpleType>
+              </element>
+              <element name="birthDate" type="date"></element>
+              <element name="phone">
+                <simpleType>
+                  <restriction base="string">
+                    <pattern value="^([0-9]{4})([ .-]?)([0-9]{3})\3([0-9]{3})$"/>
+                  </restriction>
+                </simpleType>
+              </element>
+              <element name="email">
+                <simpleType>
+                  <restriction base="string">
+                    <pattern value="^([A-Za-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$"/>
+                  </restriction>
+                </simpleType>
+              </element>
+              <element name="course" type="string"></element>
+              <element name="specialty" type="string"></element>
+              <element name="facultyNumber">
+                <simpleType>
+                  <restriction base="string">
+                    <pattern value="[0-9]{7}"/>
+                  </restriction>
+                </simpleType>
+              </element>
+              <element name="exams">
+                <complexType>
+                  <sequence maxOccurs="unbounded">
+                    <element ref="students:exam"></element>
+                  </sequence>
+                </complexType>
+              </element>
+            </sequence>
+          </complexType>
+        </element>
+      </sequence>
+    </complexType>
+  </element>
+  <element name="exam">
+    <complexType>
+      <all>
+        <element name="name" type="string"></element>
+        <element name="tutor" type="string"></element>
+        <element name="score">
+          <simpleType>
+            <restriction base="unsignedByte">
+              <minInclusive value="2"></minInclusive>
+              <maxInclusive value="6"></maxInclusive>
+            </restriction>
+          </simpleType>
+        </element>
+        <element name="enrollments">
+          <complexType>
+            <sequence maxOccurs="unbounded">
+              <element name="enrollment">
+                <complexType>
+                  <all>
+                    <element name="date" type="date"></element>
+                    <element name="score">
+                      <simpleType>
+                        <restriction base="unsignedShort">
+                          <maxInclusive value="500"></maxInclusive>
+                        </restriction>
+                      </simpleType>
+                    </element>
+                    <element name="endorsement" type="boolean"></element>
+                  </all>
+                </complexType>
+              </element>
+            </sequence>
+          </complexType>
+        </element>
+      </all>
+    </complexType>
+  </element>
+</schema>
