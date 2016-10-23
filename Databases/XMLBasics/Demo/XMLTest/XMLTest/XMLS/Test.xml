@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="XSLTFile1.xslt"?>
+<library name=".NET Developer's Library"
+         xmlns="http://tempuri.org/TestSchema.xsd">
+  <book>
+    <title>Professional C# 4.0 and .NET 4</title>
+    <author>Christian Nagel</author>
+    <isbn>978-0-470-50225-9</isbn>
+  </book>
+  <book>
+    <title>test title</title>
+    <author>test author</author>
+    <isbn>test-isbn</isbn>
+  </book>
+  <book>
+    <title>Silverlight in Action</title>
+    <author>Pete Brown</author>
+    <isbn>978-1-935182-37-5</isbn>
+  </book>
+</library>

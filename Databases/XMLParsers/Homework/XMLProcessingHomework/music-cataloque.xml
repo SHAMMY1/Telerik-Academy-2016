@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cataloque>
+  <album>
+    <name>Parachutes</name>
+    <artist>Coldplay</artist>
+    <year>2000</year>
+    <producer>Coldplay</producer>
+    <price>25</price>
+    <songs>
+      <song name="Don’t Panic" duration="2.19"/>
+      <song name="Shiver" duration="5.01"/>
+      <song name="Spies" duration="5.20"/>
+      <song name="Sparks" duration="3.48"/>
+      <song name="Yellow" duration="4.31"/>
+      <song name="Trouble" duration="4.32"/>
+      <song name="Parachutes" duration="0.47"/>
+      <song name="High Speed" duration="4.16"/>
+      <song name="We Never Change" duration="4.11"/>
+      <song name="Everything’s Not Lost / Life Is for Living" duration="7.14"/>
+    </songs>
+  </album>
+  <album>
+    <name>The Slim Shady LP</name>
+    <artist>Eminem</artist>
+    <year>1999</year>
+    <producer>Dr.Dre</producer>
+    <price>22</price>
+    <songs>
+      <song name="My name is" duration="4.29"/>
+      <song name="Guilty Conscience" duration="3:21"/>
+      <song name="Brain Damage" duration="3.49"/>
+      <song name="If I Had" duration="4.05"/>
+      <song name="Role Model" duration="3.26"/>
+      <song name="My Fault" duration="4.00"/>
+      <song name="Ken Kaniff" duration="1.18"/>
+      <song name="Cum On Everybody" duration="3.40"/>
+      <song name="Rock Bottom" duration="3.34"/>
+      <song name="Just Don’t Give a Fuck" duration="4.03"/>
+      <song name="As the World Turns" duration="4.26"/>
+      <song name="Just Don’t Give a Fuck" duration="4.03"/>
+      <song name="I’m Shady" duration="3.34"/>
+      <song name="Bad Meets Evil" duration="4.15"/>
+      <song name="Still Don’t Give a Fuck" duration="4.09"/>
+    </songs>
+  </album>
+  <album>
+    <name>Like a Virgin</name>
+    <artist>Madonna</artist>
+    <year>1984</year>
+    <producer>Nile Rodgers</producer>
+    <price>15</price>
+    <songs>
+      <song name="Material Girl" duration="4.02"/>
+      <song name="Angel" duration="3:56"/>
+      <song name="Like a Virgin" duration="3.39"/>
+      <song name="Over and Over" duration="4.13"/>
+      <song name="Love Don’t Live Here Anymore" duration="4.49"/>
+      <song name="Dress You Up" duration="4.01"/>
+      <song name="Shoo-Bee-Doo" duration="5.17"/>
+      <song name="Pretender" duration="4.30"/>
+      <song name="Stay" duration="4.07"/>
+    </songs>
+  </album>
+  <album>
+    <name>True Blue</name>
+    <artist>Madonna</artist>
+    <year>1986</year>
+    <producer>Nile Rodgers</producer>
+    <price>15</price>
+    <songs>
+      <song name="Papa Don’t Preach" duration="4.29"/>
+      <song name="Open Your Heart" duration="4.13"/>
+      <song name="White Heat" duration="4.40"/>
+      <song name="Live to Tell" duration="5.51"/>
+      <song name="Where's the Party" duration="4.21"/>
+      <song name="True Blue" duration="4.18"/>
+      <song name="La isla bonita" duration="4.02"/>
+      <song name="Jimmy Jimmy" duration="3.56"/>
+      <song name="Love Makes the World Go Round" duration="4.32"/>
+    </songs>
+  </album>
+</cataloque>
